@@ -1,0 +1,125 @@
+header {
+    background-color: #000000;
+    padding: 20px 0;
+}
+
+#logo {
+    width: 20%;
+}
+
+.caixa{
+    width: 940px;
+    position: relative;
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+ 
+nav a:hover {
+    color: aqua;
+    font-size: 30px
+}
+
+.produtos
+{
+    width: 940px; /* tamanho das imagens */
+    
+    margin: 0 auto; /* margem */
+    padding: 100px 0px; /*margem interna 50px sao as bases e ZERO é as laterais */
+    
+    
+}
+.produtos li
+{
+    text-align: center;  /*alinha o texto ao centro*/
+    display: inline-block;  /* faz com que o elemento oculpe apenas o espaço necessario assim podendo deixar um outro elemento do lado do outro*/
+    width: 30%;  /* define a largura do objeto*/
+    vertical-align: top; 
+    margin: 0 1.5%; /*margem porcentual*/
+    padding: 30px 20px;
+    box-sizing: border-box; /* como bota o conteudo do elemento para se comportar de acordo com a largura em porcentual que foi criado*/
+    border:2px solid #000000 ; /*para criar uma borda , 2px é o tamanho da linha, solid do tipo solido, #000000 é acor*/
+    border-radius: 15px;/*arrendodamento das bordas */
+    transition: 700ms;
+}
+.produtos li:hover /* hover pega a interação do usuario enquanto o mouse estiver em cima dos links do menude navegação*/
+{
+    border-color:#c78c19 ;
+    box-shadow: -10px -10px 10px 2px #000000;
+    background: rgb(211, 211, 211);
+    
+}
+.produtos li:active /*active pega a interação do usuario enquanto  o mouse estiver precionando */
+{
+    border-color: #cccccc;
+}
+
+.produtos h2
+{
+    font-size: 30px;
+    
+}
+
+.produtos li:hover h2
+{
+    
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.produtos li:hover .footer
+{
+    transition: 2000ms;
+}
+
+.produtos li:hover .produto-descricao
+{
+    font-size: 25px;
+}
+
+.produtos li:hover .produto-preco
+{
+    font-size: 29px;
+}
+
+
+
+.produto-descricao
+{
+    font-size: 18px;
+    color: black;
+
+    
+}
+
+
+.produto-preco
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+.produto-imagem
+{
+    width: 80%;
+
+}

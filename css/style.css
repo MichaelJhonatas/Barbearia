@@ -1,0 +1,147 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    font-size: 100%;
+    background-color: rgb(0, 0, 0)
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+a {
+    color: white;
+
+}
+.caixa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+
+}
+
+.cabesalhome {
+    font-family: 'Fjalla One', sans-serif;
+
+}
+#logo {
+    width: 40%;
+}
+    
+#menor {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    text-align: center;
+    background: #cccccc00;
+    color: rgb(255, 255, 255);
+
+}
+
+.produtos
+{
+    width: 940px; /* tamanho das imagens */
+    
+    margin: 0 auto; /* margem */
+    padding: 100px 0px; /*margem interna 50px sao as bases e ZERO é as laterais */
+    
+    
+}
+.produtos li
+{
+    text-align: center;  /*alinha o texto ao centro*/
+    display: inline-block;  /* faz com que o elemento oculpe apenas o espaço necessario assim podendo deixar um outro elemento do lado do outro*/
+    width: 30%;  /* define a largura do objeto*/
+    vertical-align: top; 
+    margin: 0 1.5%; /*margem porcentual*/
+    padding: 30px 20px;
+    box-sizing: border-box; /* como bota o conteudo do elemento para se comportar de acordo com a largura em porcentual que foi criado*/
+    border:2px solid #000000 ; /*para criar uma borda , 2px é o tamanho da linha, solid do tipo solido, #000000 é acor*/
+    border-radius: 15px;/*arrendodamento das bordas */
+    transition: 700ms;
+}
+.produtos li:hover /* hover pega a interação do usuario enquanto o mouse estiver em cima dos links do menude navegação*/
+{
+    border-color:#c78c19 ;
+    box-shadow: -10px -10px 10px 2px #fffefe;
+    background: rgb(255, 253, 253);
+    
+}
+.produtos li:active /*active pega a interação do usuario enquanto  o mouse estiver precionando */
+{
+    border-color: #fffcfc;
+}
+
+.produtos h2
+{
+    font-size: 30px;
+    
+}
+
+.produtos li:hover h2
+{
+    
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.produtos li:hover .footer
+{
+    transition: 2000ms;
+}
+
+.produtos li:hover .produto-descricao
+{
+    font-size: 25px;
+}
+
+.produtos li:hover .produto-preco
+{
+    font-size: 29px;
+}
+
+
+
+.produto-descricao
+{
+    font-size: 18px;
+    color: black;
+
+    
+}
+
+
+.produto-preco
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+.produto-imagem
+{
+    width: 80%;
+    border-radius: 30px;
+
+}
